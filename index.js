@@ -8,9 +8,12 @@ function printValues(){
 }
 
 function mostrarMensaje(mensaje){
-    const newValor= document.createElement('H3');
+    const lenguajes= document.createElement('H3');
     newValor.textContent= mensaje;
-    divMensaje.appendChild(newValor);
-    
+    divMensaje.appendChild(lenguajes);
+
 }
 
+function mostrarMensaje2(mensaje){
+    divMensaje.innerHTML= divMensaje.innerHTML + '<h3>'+mensaje+'</h3>'
+}
